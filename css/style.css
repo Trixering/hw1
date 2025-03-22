@@ -1,0 +1,99 @@
+#offline-alert {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.nav-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 10px;
+}
+
+#sub {
+    width: 400px;
+    gap: 40px;
+    height: 42px;
+    white-space: nowrap;
+    margin-bottom: 2rem;
+}
+
+#submit {
+    margin: 1px 0;
+}
+
+.completed {
+    background: rgb(187, 187, 187);
+}
+
+.current {
+    background: white;
+    border: 2px solid black;
+}
+
+.pending {
+    background: black;
+}
+
+#level-title{
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 6rem;
+}
+
+main {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.tips{
+    font-family: 'SimSun';
+    font-size: 24px;
+    color: #747474;
+}
+
+.question{
+    font-size: 30px;
+}
+
+img{
+    text-align: center;
+}
+
+
+.letter-box {
+    width: 40px;
+    height: 40px;
+    border: 2px solid #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    margin: 0 5px;
+}
+.correct {
+    background-color: #6aaa64;
+    color: white;
+}
+.present {
+    background-color: #c9b458;
+    color: white;
+}
+.absent {
+    background-color: #787c7e;
+    color: white;
+}
+
+#rickroll{
+    justify-content: space-around
+}
+
+#rickroll img{
+    height: 180px;
+}
