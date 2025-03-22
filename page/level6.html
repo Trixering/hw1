@@ -83,6 +83,7 @@
         function updateTimer() {
             if (timeLeft <= 0) {
                 alert(`時間到！正確答案是 ${answer.join('')}\n再試一次吧！`);
+                window.location.href = `level${currentLevel}.html`;
                 return;
             }
             timeLeft -= 0.01;
