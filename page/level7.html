@@ -12,7 +12,7 @@
 </head>
 
 <body class="bg-light text-center">
-    
+
 
     <nav class="my-1">
         <span id="nav-dots"></span>
@@ -118,10 +118,10 @@
             }
             failure++;
             if (failure >= 7) {
-                alert("失敗次數過多！");
+                alert("失敗次數過多！\n答案是：" + answer);
                 window.location.href = `level${currentLevel}.html`;
             }
-            
+
             $('#answer').val('');
         });
 
@@ -130,10 +130,10 @@
         });
 
         $(document).ready(() => {
-           
+
             leveldot();
             fetchWord();
-            
+
         });
     </script>
 </body>
