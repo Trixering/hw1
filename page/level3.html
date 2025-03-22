@@ -12,7 +12,7 @@
 </head>
 
 <body class="bg-light text-center">
-    
+
 
     <nav class="my-1">
         <span id="nav-dots"></span>
@@ -21,21 +21,21 @@
     <h1 id="level-title">Level 3 &nbsp;-&nbsp; 404</h1>
 
     <div id="sub" class="container my-5 d-flex">
-        <input 
- autocomplete="off"type="text" id="answer" class="form-control" placeholder="輸入答案">
+        <input autocomplete="off" type="text" id="answer" class="form-control" placeholder="輸入答案">
         <button id="submit" class="btn btn-dark">確認</button>
     </div>
 
     <main>
         <p class="tips">— 阿勒？檔案去哪了呢？ —</p>
-        <img src="../img/level2.png">
+        <a href='../img/level2.png'>
+            <img src="../img/level2.png" alt="通關密碼"></a>
     </main>
 
     <script>
         const totalLevels = 8;
         let currentLevel = 3;
 
-        
+
 
         function leveldot() {
             let dot = '';
@@ -59,7 +59,7 @@
                 alert('回答錯誤！\n\n圖片路徑是不是有問題？');
             }
         });
-        
+
         $('#answer').keypress((event) => {
             if (event.which === 13) {
                 $('#submit').click();
@@ -67,9 +67,9 @@
         });
 
         $(document).ready(() => {
-           
+
             leveldot();
-            
+
         });
     </script>
 </body>
