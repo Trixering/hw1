@@ -63,7 +63,6 @@
         function fetchWord() {
             $.getJSON("../static/wordle.json", (data) => {
                 answer = data[Math.floor(Math.random() * data.length)].toUpperCase();
-                console.log("Answer:", answer);
             });
         }
 
